@@ -102,7 +102,9 @@
                 this.hidePeopleField = false;
             },
             showCustomTip() {
-                this.hideTipField = !this.hideTipField;
+                this.activeTipButton = 0;
+                this.activeTipButton = 4;
+                this.hideTipField = false;
             },
             setTip(tip) {
                 this.activeTipButton = 0;
