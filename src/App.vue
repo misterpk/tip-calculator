@@ -16,7 +16,6 @@
               <input class="people"
                      type="number"
                      min="0"
-                     oninput="validity.valid||(value='');"
                      v-bind:class="{hide: hidePeopleField}"
                      v-model.number="numPeople" />
             </div>
@@ -35,7 +34,6 @@
               <input class="tip"
                      type="number"
                      min="0"
-                     oninput="validity.valid||(value='');"
                      v-model.number="tip"/>
               %
             </div>
@@ -48,7 +46,6 @@
               type="number"
               class="total"
               min="0"
-              oninput="validity.valid||(value='');"
               v-model="billTotal"
           />
         </div>
@@ -58,8 +55,8 @@
           <button @click="calculate">Calculate</button>
         </div>
         <div v-bind:class="{hide: hideResults}">
-          <h4>Tip per person: {{ tipPerPerson }}</h4>
-          <h4>Total per person: {{ totalPerPerson }}</h4>
+          <h4>Tip per person: ${{ tipPerPerson }}</h4>
+          <h4>Total per person: ${{ totalPerPerson }}</h4>
         </div>
       </div>
     </div>
