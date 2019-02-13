@@ -3,18 +3,22 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "start": "parcel public/parcel.html --no-cache --open",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build"
   },
   "dependencies": {
     "mathjs": "^5.4.2",
+    "parcel": "^1.11.0",
     "vue": "^2.5.22"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.4.0",
     "@vue/cli-service": "^3.4.0",
     "@vue/eslint-config-prettier": "^4.0.1",
+    "less-loader": "^4.1.0",
     "eslint": "^5.13.0",
+    "less": "^3.9.0",
     "prettier": "^1.16.4",
     "vue-template-compiler": "^2.5.21"
   },
